@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { AppSearchBox } from './app.searchBox';
+
+import {MatButtonModule} from '@angular/material';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppSearchBox
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatButtonModule,
+    MatFormFieldModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppSearchBox]
 })
 export class AppModule { }
